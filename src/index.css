@@ -1,0 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+
+body {
+  margin: 0;
+  /* font-family: 'Galano Grotesque Alt', sans-serif;
+  font-family: 'Galano Grotesque', sans-serif; */
+  font-family: "Lato", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 
+code {
+  font-family: 'Galano Grotesque Alt', sans-serif;
+  font-family: 'Galano Grotesque', sans-serif;
+} */
