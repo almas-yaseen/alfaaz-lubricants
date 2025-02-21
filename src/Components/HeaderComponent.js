@@ -33,7 +33,7 @@ const HeaderComponent = () => {
   const categories = useMemo(
     () => [
       {
-        title: "Dish Washer",
+        title: "Bike Oil 2T",
         items: [
           {
             name: "Free Standing",
@@ -58,25 +58,25 @@ const HeaderComponent = () => {
         ],
       },
       {
-        title: "Shop By Brand",
+        title: "Categories",
         items: [
           {
-            name: "Bosch",
+            name: "Gasoline Engine Oil",
             image:
               "https://logos-world.net/wp-content/uploads/2020/08/Bosch-Emblem.png",
           },
           {
-            name: "LG",
+            name: "Motorcycle Engine Oil",
             image:
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqfQ8u2jAetj1SFGtK_bZGo38RqFuBaN5W0OtoYgJqS0eAelSiycE1qfbMqOlk5ZtIMmM&usqp=CAU",
           },
           {
-            name: "Samsung",
+            name: "Coolant",
             image:
               "https://i.pinimg.com/564x/a1/79/a4/a179a400366bf6f5de2e76e42285a446.jpg",
           },
           {
-            name: "Haier",
+            name: "Brake Fluid",
             image:
               "https://cdn-au.onetrust.com/logos/4d07804a-f4e0-42e4-89de-ef883f73d081/018e731e-5c5a-7ac6-a2f6-35c236c7a752/7a2536ce-1ff5-4dde-a12b-32b1bae9c5b0/Haier_Lock-up_White_on_Process_Gradiant.jpg",
           },
@@ -179,11 +179,14 @@ const HeaderComponent = () => {
   }, [categories]);
   const placeholderItems = useMemo(() => {
     return [
-      `"Bosch"`,
-      `"Blue Star"`,
-      `"Winter Halter"`,
-      `"Convotherm"`,
-      `"Classeq"`,
+      `"Gasoline Engine Oil"`,
+      `"Disel Engine Oil"`,
+      `"Gear Oil"`,
+      `"Hydraulic Oil"`,
+      `"Auto Transmission Fluid"`,
+      `"Brake Fluid"`,
+      `"Coolant"`,
+      `"Motorcycle oil"`,
     ];
   }, []);
   const inputRef = React.useRef(null);
@@ -443,18 +446,6 @@ const HeaderComponent = () => {
             <li className="separator">|</li>
             <li>
               <a className="black-text" href="/">
-                Dishwasher
-              </a>
-            </li>
-            <li className="separator">|</li>
-            <li>
-              <a className="black-text" href="/">
-                Kitchenware
-              </a>
-            </li>
-            <li className="separator">|</li>
-            <li>
-              <a className="black-text" href="/">
                 Contact
               </a>
             </li>
@@ -480,7 +471,6 @@ const HeaderComponent = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="modal-header">
-                  {/* <h3 className="modal-title">Best Sellers</h3> */}
                   <button onClick={closeModal} className="close-button">
                     {!isMobile ? (
                       <svg
@@ -775,16 +765,6 @@ const HeaderComponent = () => {
                 <li>
                   <a className="black-text-nav" href="#privacy">
                     Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a className="black-text-nav" href="#dishwasher">
-                    Dishwasher
-                  </a>
-                </li>
-                <li>
-                  <a className="black-text-nav" href="#kitchenware">
-                    Kitchenware
                   </a>
                 </li>
                 <li>
