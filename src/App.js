@@ -15,7 +15,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <FormComponent />
+      {/* <FormComponent /> */}
       <HeaderComponent />
       <CategoryComponents />
       <BannerSlider />

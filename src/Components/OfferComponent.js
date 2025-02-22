@@ -1,27 +1,26 @@
 import React from 'react';
 
-
 const OfferComponent = () => {
   return (
     <div className='offer-component'>
       <div className='offer-under'>
         <div 
           className='offer-image' 
-          style={{ backgroundImage: `url(https://img.choice.com.au/-/media/c5a5f0f1e9e74146830805eb0e53f32c.ashx?w=660&jq=80%20660w)` }}
+          style={{ backgroundImage: `url(https://t3.ftcdn.net/jpg/03/26/49/52/360_F_326495250_pWoYD66lkPA7WZDzWbX7mTWzSrFJ1UCh.jpg)` }}
         ></div>
         <div 
           className='offer-image' 
-          style={{ backgroundImage: `url(https://www.checkatrade.com/blog/wp-content/uploads/2020/05/Install-dishwasher-2.jpg)` }}
+          style={{ backgroundImage: `url(https://media.istockphoto.com/id/480326822/photo/twilight-of-industrial-petroleum-plant.jpg?s=612x612&w=0&k=20&c=9FEo3z0PMblY_IVqTUC2lqX4NPh4kwFnklG37Vzzjm8=)` }}
         ></div>
         <div 
           className='offer-image' 
-          style={{ backgroundImage: `url(https://asset.kompas.com/crops/F48ZNxc5OIAcDPGhOubt77lOuKs=/12x51:932x664/750x500/data/photo/2023/01/17/63c62ee25e6af.jpg)` }}
+          style={{ backgroundImage: `url(https://t3.ftcdn.net/jpg/03/06/62/40/360_F_306624047_QcF2cA57bjGpvFDAlSQDPdSlvAgXwfJC.jpg)` }}
         ></div>
       </div>
       <div className='offer-zone'>
         <div 
           className='main-offer' 
-          style={{ backgroundImage: `url(https://hafeleappliances.com/images/TempBlog/banner-dishwasher.jpg)` }}
+          style={{ backgroundImage: `url(https://t4.ftcdn.net/jpg/00/62/36/33/360_F_62363310_d3CZCpZiKRfZxLcDXrwnLyzWeBwqM5dp.jpg)` }}
         ></div>
       </div>
     </div>

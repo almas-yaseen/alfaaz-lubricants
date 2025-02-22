@@ -1,17 +1,30 @@
-import React from "react";
-
+import React, { useRef, useEffect } from "react";
+import video from "../videos/Petrochemical Plant _ Teaser.mp4"
 const BannerVideo = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    const stopVideoAtEnd = () => {
+      if (videoElement.currentTime >= 185) {
+        videoElement.pause();
+      }
+    };
+
+    videoElement.addEventListener("timeupdate", stopVideoAtEnd);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      videoElement.removeEventListener("timeupdate", stopVideoAtEnd);
+    };
+  }, []);
+
   return (
     <div className="banner-container">
-      <iframe
-        width="100%"
-        height="500px"
-        src="https://www.youtube.com/embed/YrdZv4euay0?autoplay=1&mute=1&loop=1&controls=0"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="autoplay"
-        allowFullScreen
-      ></iframe>
+      <video ref={videoRef} width="100%" height="500px" autoPlay loop muted>
+        <source src={video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };
