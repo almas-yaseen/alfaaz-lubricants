@@ -27,12 +27,16 @@ const FooterComponent = () => {
               color: "grey",
             }}
           >
-            Since our establishment in 2018, MYSON has swiftly risen as India's
-            leading hub for pet parents. With a wide array of furniture and
-            kitchenwares, we fulfill all your kitchen requirements with
-            unparalleled quality and attention. With a presence in 2 physical
-            retail outlets spanning Kerala, we're continually expanding our
-            reach to serve you better.
+            Since our establishment, Alfaaz Lubricants has emerged as a trusted
+            name in the petrochemical industry, delivering high-performance
+            lubricants tailored for automotive, industrial, and commercial
+            applications. With a commitment to innovation and quality, our
+            products ensure superior engine protection, enhanced efficiency, and
+            long-lasting performance. Operating across multiple markets, Alfaaz
+            Lubricants continues to expand its reach, providing advanced
+            lubrication solutions that power industries and keep machines
+            running smoothly. Backed by cutting-edge research and a
+            customer-centric approach, we drive excellence in every drop.
           </p>
         </section>
 

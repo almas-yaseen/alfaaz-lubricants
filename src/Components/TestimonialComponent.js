@@ -5,52 +5,46 @@ const Testimonial = () => {
   return (
     <div className="testimonial">
       <h4 style={{ fontWeight: "bold", textAlign: "center" }} className="title">
-        Our Customers Love Us!
+        What Our Clients Say
       </h4>
       <div
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >
         <div className="testimonial-container">
           <div className="testimonial-card">
-            {/* <div className="testimonial-image">
-              <h3>Mr. ALAN</h3>
-            </div> */}
             <div className="testimonial-content">
               <p className="testimonial-text">
-                "This service has been fantastic! The team was professional, and
-                the results exceeded our expectations."
+                "The efficiency and reliability of their petrochemical solutions
+                have significantly improved our operations."
               </p>
-              <p className="testimonial-author">- Toms</p>
+              <p className="testimonial-author">- John Miller</p>
+              <p className="testimonial-stars">⭐⭐⭐⭐⭐</p>
             </div>
           </div>
         </div>
 
         <div className="testimonial-container">
           <div className="testimonial-card">
-            {/* <div className="testimonial-image">
-              <h3>Mrs. JULIET</h3>
-            </div> */}
             <div className="testimonial-content">
               <p className="testimonial-text">
-                "This service has been fantastic! The team was professional, and
-                the results exceeded our expectations."
+                "Exceptional service and top-notch quality in petrochemical
+                processing. Highly recommended!"
               </p>
-              <p className="testimonial-author">- Jane Smith</p>
+              <p className="testimonial-author">- Sarah Thompson</p>
+              <p className="testimonial-stars">⭐⭐⭐⭐⭐</p>
             </div>
           </div>
         </div>
 
         <div className="testimonial-container">
           <div className="testimonial-card">
-            {/* <div className="testimonial-image">
-              <h3>Mr. FELIX</h3>
-            </div> */}
             <div className="testimonial-content">
               <p className="testimonial-text">
-                "This service has been fantastic! The team was professional, and
-                the results exceeded our expectations."
+                "Their expertise in petrochemicals has streamlined our supply
+                chain, making operations more cost-effective."
               </p>
-              <p className="testimonial-author">- Alice Johnson</p>
+              <p className="testimonial-author">- Mark Robinson</p>
+              <p className="testimonial-stars">⭐⭐⭐⭐⭐</p>
             </div>
           </div>
         </div>

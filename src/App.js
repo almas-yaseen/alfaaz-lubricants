@@ -11,6 +11,7 @@ import OfferComponent from "./Components/OfferComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
+import FlagComponent from "./Components/FlagComponent";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <OfferComponent />
       <CardComponent title="New Arrival" />
       {/* <CardComponent title="Recently Visited" /> */}
+      <FlagComponent/>
       <Testimonial />
       <Footer />
     </div>
