@@ -17,7 +17,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { useNavigate } from "react-router-dom";
-import CompanyLogo from "../images/CompanyLogo.png";
+import CompanyLogo from "../images/CompanyLogo.webp";
 
 const HeaderComponent = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -33,52 +33,52 @@ const HeaderComponent = () => {
   const categories = useMemo(
     () => [
       {
-        title: "Bike Oil 2T",
+        title: "Engine Oils",
         items: [
           {
-            name: "Free Standing",
+            name: "Castrol Magnetic",
             image:
-              "https://i.pinimg.com/564x/3e/ea/17/3eea17fb1b40e44d5c6374f985e1d89e.jpg",
+              "https://m.media-amazon.com/images/I/61gdV8mmZfL.jpg",
           },
           {
-            name: "Built In",
+            name: "Shell Helix",
             image:
-              "https://www.ifbappliances.com/media/opti_image/webp/catalog/product/cache/ab27e2d12b7baa9faaaff0d7d3ddf1f2/n/e/neptune_bi2_fv.webp",
+              "https://m.media-amazon.com/images/I/41IlheXC89L._SX300_SY300_QL70_FMwebp_.jpg",
           },
           {
-            name: "Counter Top",
+            name: "Motul",
             image:
-              "https://www.ifbappliances.com/media/opti_image/webp/catalog/product/cache/ab27e2d12b7baa9faaaff0d7d3ddf1f2/1/8/1800x1800_vx14_front.webp",
+              "https://m.media-amazon.com/images/I/41yOdwOLHwL._SY300_SX300_QL70_FMwebp_.jpg",
           },
           {
-            name: "Commercial",
+            name: "Liqui Moly",
             image:
-              "https://cpimg.tistatic.com/08838150/b/4/Commercial-Hood-Type-Dishwasher.jpg",
+              "https://m.media-amazon.com/images/I/41UF17gbxRL._AC_UF480,480_SR480,480_.jpg",
           },
         ],
       },
       {
-        title: "Categories",
+        title: "Shop by Brands",
         items: [
           {
-            name: "Gasoline Engine Oil",
+            name: "Castrol",
             image:
-              "https://logos-world.net/wp-content/uploads/2020/08/Bosch-Emblem.png",
+              "https://etimg.etb2bimg.com/photo/98300892.cms",
           },
           {
-            name: "Motorcycle Engine Oil",
+            name: "Shell",
             image:
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqfQ8u2jAetj1SFGtK_bZGo38RqFuBaN5W0OtoYgJqS0eAelSiycE1qfbMqOlk5ZtIMmM&usqp=CAU",
+              "https://www.logodesignlove.com/wp-content/uploads/2008/04/shell-logo-design-1.gif",
           },
           {
-            name: "Coolant",
+            name: "liqui molly",
             image:
-              "https://i.pinimg.com/564x/a1/79/a4/a179a400366bf6f5de2e76e42285a446.jpg",
+              "https://www.misteroil.eu/images/shop_brand/s_c/1024x512/liqui-moly_1519305453.webp",
           },
           {
-            name: "Brake Fluid",
+            name: "Motul",
             image:
-              "https://cdn-au.onetrust.com/logos/4d07804a-f4e0-42e4-89de-ef883f73d081/018e731e-5c5a-7ac6-a2f6-35c236c7a752/7a2536ce-1ff5-4dde-a12b-32b1bae9c5b0/Haier_Lock-up_White_on_Process_Gradiant.jpg",
+              "https://images.seeklogo.com/logo-png/9/1/motul-logo-png_seeklogo-95224.png",
           },
         ],
       },

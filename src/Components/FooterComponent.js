@@ -15,7 +15,7 @@ const FooterComponent = () => {
         {/* Logo and description on the left */}
         <section id="footer-logo">
           <img
-            src={require("../images/CompanyLogo.png")}
+            src={require("../images/CompanyLogo.webp")}
             alt="Company Logo"
             className="image-fluid"
           />
