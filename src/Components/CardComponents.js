@@ -7,6 +7,7 @@ import { useMediaQuery } from "react-responsive";
 import { useNavigate } from "react-router-dom";
 import { getProducts } from "../services/productService";
 import TrendingProducts from "../Constants/TrendingProducts";
+import NewArrival from '../Constants/NewArrival'
 
 function CardComponent(props) {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ function CardComponent(props) {
             } else if (props.title === "Trending Products") {
               setAdminProducts(TrendingProducts);
             } else if (props.title === "New Arrival") {
-              setAdminProducts(products);
+              setAdminProducts(NewArrival);
             }
             // Use the default products if API returns an empty array
           }
@@ -41,7 +42,7 @@ function CardComponent(props) {
           } else if (props.title === "Trending Products") {
             setAdminProducts(TrendingProducts);
           } else if (props.title === "New Arrival") {
-            setAdminProducts(products);
+            setAdminProducts(NewArrival);
           }
         });
     }

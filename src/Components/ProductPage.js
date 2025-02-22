@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import products from "../Constants/Products";
 import { getSingleProduct } from "../services/productService";
 import TrendingProducts from "../Constants/TrendingProducts";
+import NewArrival from "../Constants/NewArrival";
 const ProductPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
@@ -27,7 +28,7 @@ const ProductPage = () => {
         const fallbackSources = [
           { range: [1, 6], data: products },
           { range: [7, 11], data: TrendingProducts },
-          { range: [12, 16], data: TrendingProducts },
+          { range: [12, 16], data: NewArrival },
         ];
 
         const fallbackProduct = fallbackSources
