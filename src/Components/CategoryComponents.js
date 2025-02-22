@@ -37,32 +37,32 @@ const CategoryComponents = () => {
       name: "Offer Zone",
     },
     {
-      image:
-        "https://www.classeq.co.uk/uploads/products/classeq-g400/G400-basket-on-door.png",
+      image: "https://etimg.etb2bimg.com/photo/98300892.cms",
       _id: 2,
-      name: "Blue star",
+      name: "Castrol",
     },
     {
-      image: "https://www.dihr.com/sync/img/HT 11 ECO.jpg",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTpIq4hBcTgPSPp_3TFH7yek9jBr9FZclqEQ&s",
       _id: 3,
-      name: "Winter halter",
+      name: "Servo",
     },
     {
-      image: "https://www.scotsice.com.au/_images/_dihr/RX101E.jpg",
+      image:
+        "https://www.misteroil.eu/images/shop_brand/s_c/1024x512/liqui-moly_1519305453.webp",
       _id: 4,
-      name: "Bosch",
+      name: "Liqui molly",
     },
     {
       image:
-        "https://www.classeq.co.uk/uploads/products/classeq-g500/G500_Rack_On_Door.png",
+        "https://images.seeklogo.com/logo-png/9/1/motul-logo-png_seeklogo-95224.png",
       _id: 5,
-      name: "Convotherm",
+      name: "Motul",
     },
     {
-      image:
-        "https://www.angliacateringequipment.com/wp-content/uploads/2022/09/Convotherm-Maxx-10.10-Electric-Combi-Oven-101-Shelves-GN-11-400x400.webp",
+      image: "https://cms.suse.net/sites/default/files/logo_images/repsol.png",
       _id: 6,
-      name: "Classeq",
+      name: "Repsol",
     },
   ];
 
