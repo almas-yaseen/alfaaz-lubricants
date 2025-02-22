@@ -40,8 +40,8 @@ const FooterComponent = () => {
         <section id="links">
           <ul>
             <h5 className="footer-links">Links</h5>
-            <li>Kitchen</li>
-            <li>Furniture</li>
+            <li>Castrol</li>
+            <li>Petrochemical</li>
             <li>Shops</li>
           </ul>
         </section>
@@ -51,7 +51,7 @@ const FooterComponent = () => {
           <ul>
             <h5 className="footer-contact">Contact Us</h5>
             <li style={{ marginBottom: "8px" }}>Call Us at 8606387883</li>
-            <li style={{ marginBottom: "8px" }}>www.myson.in</li>
+            <li style={{ marginBottom: "8px" }}>www.alfaazlubricants.in</li>
             <li style={{ marginBottom: "8px" }}>
               <div
                 style={{
@@ -97,7 +97,7 @@ const FooterComponent = () => {
           </ul>
         </section>
       </div>
-      <h6>© 2024 MYSON Private Limited</h6>
+      <h6>© 2024 Alfaaz Lubricants Private Limited</h6>
     </footer>
   );
 };
