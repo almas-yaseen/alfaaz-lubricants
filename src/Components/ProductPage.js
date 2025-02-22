@@ -6,6 +6,7 @@ import HeaderComponent from "./HeaderComponent";
 import { useParams } from "react-router-dom";
 import products from "../Constants/Products";
 import { getSingleProduct } from "../services/productService";
+import TrendingProducts from "../Constants/TrendingProducts";
 const ProductPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
@@ -22,9 +23,16 @@ const ProductPage = () => {
           "Error fetching product, falling back to local data:",
           error
         );
-        const fallbackProduct = products.find(
-          (item) => item._id === parseInt(id)
-        );
+
+        const fallbackSources = [
+          { range: [1, 6], data: products },
+          { range: [7, 11], data: TrendingProducts },
+          { range: [12, 16], data: TrendingProducts },
+        ];
+
+        const fallbackProduct = fallbackSources
+          .find(({ range }) => id >= range[0] && id <= range[1])
+          ?.data.find((item) => item._id === parseInt(id));
 
         if (fallbackProduct) {
           setProduct(fallbackProduct);

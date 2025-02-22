@@ -24,7 +24,7 @@ function App() {
       <CardComponent title="Trending Products" />
       <OfferComponent />
       <CardComponent title="New Arrival" />
-      <CardComponent title="Recently Visited" />
+      {/* <CardComponent title="Recently Visited" /> */}
       <Testimonial />
       <Footer />
     </div>

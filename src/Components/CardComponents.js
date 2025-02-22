@@ -6,6 +6,7 @@ import "./CardComponent.css";
 import { useMediaQuery } from "react-responsive";
 import { useNavigate } from "react-router-dom";
 import { getProducts } from "../services/productService";
+import TrendingProducts from "../Constants/TrendingProducts";
 
 function CardComponent(props) {
   const navigate = useNavigate();
@@ -22,14 +23,26 @@ function CardComponent(props) {
           if (data.length) {
             setAdminProducts(data);
           } else {
+            if (props.title === "Best Sellers") {
+              setAdminProducts(products);
+            } else if (props.title === "Trending Products") {
+              setAdminProducts(TrendingProducts);
+            } else if (props.title === "New Arrival") {
+              setAdminProducts(products);
+            }
             // Use the default products if API returns an empty array
-            setAdminProducts(products);
           }
         })
         .catch((error) => {
           console.error("Error fetching products:", error);
           // Fall back to default products on error
-          setAdminProducts(products);
+          if (props.title === "Best Sellers") {
+            setAdminProducts(products);
+          } else if (props.title === "Trending Products") {
+            setAdminProducts(TrendingProducts);
+          } else if (props.title === "New Arrival") {
+            setAdminProducts(products);
+          }
         });
     }
   }, []);
